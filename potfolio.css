@@ -1,0 +1,456 @@
+*{
+    background-color: rgb(6, 2, 20);
+}
+.head{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.intro{
+    background-color: transparent;
+}
+.shivli_photo{
+    margin-left: 45px;
+    background-image: url(images/Shivli-Photo.jpeg);
+    width: 350px;
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+h1{
+    margin-left: 55px;
+    color: rgb(42, 120, 238);
+}
+p{
+    background-color: transparent;
+    margin-left: 55px;
+    color: aliceblue;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: bold;
+}
+.git{
+    background-color: transparent;
+    color: rgb(42, 120, 238);
+    font-size:40px;
+    margin-top: 5px;
+}
+.add_sec{
+    background-color: transparent;
+    margin-top: -30px;
+}
+.GitHub{
+    background-color: transparent;
+    margin: auto;
+}
+.profile_bar{
+    margin: auto;
+    height: 50px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    margin-top: 30px;
+    background-color: rgb(66, 64, 64);
+}
+.about_me{
+    margin: auto;
+    width: 1000px;
+    margin-top: -20px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: rgb(66, 64, 64);
+    flex-wrap: wrap;
+}
+.about{
+    align-items: center;
+    background-color: transparent;
+    color: aliceblue;
+}
+.About_description{
+    position: relative;top: -10px;
+    font-weight: lighter;
+}
+
+.timeline{
+    position: relative;
+    max-width: 1100px;
+    margin: 100px auto;
+    margin-left: 20%;
+    
+}
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 65%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+
+.Name{
+    height: 200px;
+    width: 400px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 20px 30px;
+    background: rgb(42, 120, 238);
+    position: relative;
+    font-size: 15px;
+}
+.description{
+    width: 750px;
+    padding: 20px 30px;
+    background: rgb(66, 64, 64);
+    position: relative;
+    font-size: 15px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.text-box{
+    display: flex;
+}
+h2{
+    color: aliceblue;
+    background-color: transparent;
+}
+small{
+    color: aliceblue;
+    background-color: transparent;
+}
+.fa-circle{
+    color: #fff;
+    background-color: transparent;
+    font-size: larger;
+    position: absolute;
+    width: 40px;
+    left:-9px;
+    top: 42px;
+    z-index: 10;
+}
+
+.timeline::after{
+    content:'';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left:0;
+    margin-left: -3px;
+    z-index: 1;
+    animation: moveline 3s linear forwards;
+}
+@keyframes moveline{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(42, 120, 238);
+    left: -270px;  
+}
+
+@media screen and (max-width: 600px){
+    .profile_bar{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .about_me{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .timeline{
+        margin:50px auto;
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .container{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box .Name .description{
+        font-size: 13px;
+    }
+    .text-box .Name .description small{
+        margin-bottom: 10px;
+    }
+    .fa-circle{
+        left: 22px;
+    }
+    .container-arrow{
+        border-right: 15px solid rgb(42, 120, 238);
+        border-left: 0;
+        left: -183px;
+    }
+}
+.Skills{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Tools{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxes{
+    display: flex;
+    margin-left: -70px;
+}
+.box1{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(243, 56, 87);
+    border-radius: 6px;
+    margin: 5px;
+}  
+.box2{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(243, 56, 87);
+    border-radius: 6px;
+    margin: 5px;
+}  
+.box3{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(243, 56, 87);
+    border-radius: 6px;
+    margin: 5px;
+}  
+.box4{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(243, 56, 87);
+    border-radius: 6px;
+    margin: 5px;
+}  
+.box5{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(243, 56, 87);
+    border-radius: 6px;
+    margin: 5px;
+}  
+
+.box6{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(243, 56, 87);
+    border-radius: 6px;
+    margin: 5px;
+}  
+.box7{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(243, 56, 87);
+    border-radius: 6px;
+    margin: 5px;
+}  
+.box8{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(243, 56, 87);
+    border-radius: 6px;
+    margin: 5px;
+}  
+.box9{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(243, 56, 87);
+    border-radius: 6px;
+    margin: 5px;
+}  
+.box11{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(22, 233, 110);
+    border-radius: 6px;
+    margin: 5px;
+}  
+.box12{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(22, 233, 110);
+    border-radius: 6px;
+    margin: 5px;
+}  
+.box13{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(22, 233, 110);
+    border-radius: 6px;
+    margin: 5px;
+}  
+.box14{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(22, 233, 110);
+    border-radius: 6px;
+    margin: 5px;
+}  
+.box15{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(22, 233, 110);
+    border-radius: 6px;
+    margin: 5px;
+}  
+.box16{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(22, 233, 110);
+    border-radius: 6px;
+    margin: 5px;
+}  
+.box10{
+    padding: 10px;
+    width: max-content;
+    font-size: small;
+    color: #fff;
+    background-color: rgb(22, 233, 110);
+    border-radius: 6px;
+    margin: 5px;
+}
+.Projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.Creativity-Jazz{
+    border-color: rgb(42, 120, 238) ;
+    border-style: solid;
+    border-width: 5px;
+    margin: 45px;
+    margin-right: 75px;
+    border-radius: 6px;
+    height: max-content;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.Portfolio-Website{
+    border-color: rgb(42, 120, 238) ;
+    border-style: solid;
+    border-width: 5px;
+    margin: 45px;
+    margin-right: 75px;
+    border-radius: 6px;
+    height: max-content;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-photo1{
+    background-image: url(images/Creativity\ JAZZ.png);
+    width: 650px;
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+.project-photo2{
+    background-image: url(images/Portfolio\ Website.png);
+    width: 650px;
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+.Contact{
+    background-color: rgb(42, 120, 238);
+    color: #fff;
+    margin: -10px;
+    text-align: center;
+}
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.icon{
+    background-color: transparent;
+    font-size: large;
+}
